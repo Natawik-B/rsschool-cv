@@ -13,3 +13,20 @@ I am 29 years old. I have been working in the insurance industry for 8 years. I'
 * VS Code
 * Git Basics
 * JavaScript Basics
+
+## Code example
+```
+const peace = 'Stop War!';
+console.log(`Stand with Ukraine! ${peace}`);
+
+```
+
+## Education & courses:
+* Belarus State economic university (The School of Management)
+* HTML online-course (https://ru.code-basics.com/languages/html)
+* CSS online-course (https://ru.code-basics.com/languages/css)
+* JS online-course (https://ru.code-basics.com/languages/javascript)
+
+## Languages
+* Russian - native language
+* English - A2 (B1 in process)
