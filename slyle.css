@@ -85,10 +85,10 @@ a:hover {
 }
 .main-title {
     margin: 20px;
-    font-size: 22px;
+    font-size: 25px;
     letter-spacing: 7px;
     text-transform: uppercase;
-    color: #be248b;
+    color: #6d2504;
     border-radius: 45%;
     box-shadow: 0 0 50px #c58bc0;
 }
@@ -140,11 +140,6 @@ a:hover {
     height: 1px;
     background-color: #be248b;
     position: relative;
-}
-
-
-.code {
-    width: 100%;
 }
 
 .footer {
