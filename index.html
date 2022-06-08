@@ -22,6 +22,7 @@
                     <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
                     <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
                     <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,9 +30,9 @@
 
     <main class="main-container">
         <div class="left">
-            <section class="section-main" id="photo">
+            <div class="section-main" id="photo">
                 <img src="./assets/jpg/photo.jpg" alt class="photo">
-            </section>
+            </div>
 
             <section class="section-left" id="contacts">
                 <h2 class="section-left-title">Contacts</h2>
@@ -81,12 +82,12 @@
             
             <section class="section-right" id="summary">
                 <h2 class="section-right-title">Summary</h2>
-                <p>I am 29 years old. I have been working in the insurance industry for 8 years. I'm constantly faced with the development of new products and various programs. Basically, of course, I act as a customer, but it's time to feel on the other side of development and feel the beauty of writing code. That is why I have decided to try something new (rs school).</p>
+                <p class="right-text">I am 29 years old. I have been working in the insurance industry for 9 years. I'm constantly faced with the development of new products and various programs. Basically, of course, I act as a customer, but it's time to feel on the other side of development and feel the beauty of writing code. That is why I have decided to try something new (rs school).</p>
             </section>
 
             <section class="section-right" id="education">
                 <h2 class="section-right-title">Education</h2>
-                <p>Belarus State Economic University (The School of Management) 2009-2013</p>
+                <p class="right-text">Belarus State Economic University (The School of Management) 2009-2013</p>
             </section>
     
             <section class="section-right" id="languages">
@@ -105,11 +106,31 @@
                 <h2 class="section-right-title">Code example</h2>
                     <pre class="code">
                         <code>
-        function getDecimal(n) {
-            return Math.abs(n % 1);
-        }
+    let countBits = function(n) {
+        return n.toString(2).replace(/0/g,'').length;
+    }
                         </code>
                     </pre>
+            </section>
+        </div>
+
+        <div class="center">
+            <section class="section-center" id="projects">
+                <h2 class="section-center-title">My projects</h2>
+                <ul class="section-center-list">
+                    <li class="section-center-list-title">
+                        <a href="https://rolling-scopes-school.github.io/natawik-b-JSFEPRESCHOOL/eco-sounds/" class="nav-link-project">
+                            <img src="./assets/jpg/eco-sounds.jpg" alt class="img-project">
+                            <p class="center-text">Eco sounds</p>
+                        </a>
+                    </li>
+                    <li class="section-center-list-title">
+                        <a href="https://rolling-scopes-school.github.io/natawik-b-JSFE2022Q1/shelter/pages/main/" class="nav-link-project">
+                            <img src="./assets/jpg/shelter.jpg" alt class="img-project">
+                            <p class="center-text">Cozy House</p>
+                        </a>
+                    </li>
+                </ul>
             </section>
         </div>
     </main>
