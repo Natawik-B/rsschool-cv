@@ -1,4 +1,17 @@
+@font-face {
+    font-family: 'Mouse-memoirs';
+    src: url("assets/fonts/mouse-memoirs-v13-latin-regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url("assets/fonts/Roboto-Italic.ttf");
+    font-weight: 400;
+}
+
 html {
+    height: 100%;
+    width: 100%;
     scroll-behavior: smooth;
     background-color: antiquewhite;
     margin: 5px auto;
@@ -9,7 +22,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /*font-family: 'Mouse-memoirs';*/
     font-family: 'Roboto';
+    font-style: normal;
     font-size: 15px;
     line-height: 1.5;
     background-image: url("./assets/jpg/picture.jpg");
@@ -75,8 +90,8 @@ a:hover {
 }
 .section-main img {
     margin: 0 auto;
-    width: 200px;
-    height: 300px;
+    width: 70%;
+    height: 100%;
     border-radius: 15%;
     box-shadow: 0 0 70px #6d2504;
 }
@@ -152,9 +167,9 @@ a:hover {
     padding: 0;
     margin: 15px 0 0 0;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 55px;
+    gap: 10px 55px;
 }
 .section-center-list-title {
     display: flex;
@@ -167,6 +182,11 @@ a:hover {
     height: 150px;
     border-radius: 4%;
     box-shadow: 0 0 70px antiquewhite;
+    filter: grayscale(1); /* Черно-белый фильтр для изображения */
+    transition: 1s;
+}
+.img-project:hover {
+    filter: grayscale(0); /* Цветное изображение при наведении */
 }
 .center-text {
     margin: 15px 0 15px 0;
@@ -217,12 +237,24 @@ a:hover {
     transition: .7s;
 }
 
-@font-face {
-    font-family: Roboto;
-    src: url("./assets/fonts/Roboto-Italic.ttf");
-}
-@media (max-width: 768px) {
-    .section {
-        width: 100%;
+@media screen and (min-width: 200px) and (max-width: 350px) {
+    body {
+        max-width: 100%;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .section-left {
+        padding-left: 0;
+    }
+    .section-left-title {
+        padding: 0;
+    }
+    code {
+        width: 60%;
+    }
+    .footer {
+        max-width: 100%;
+        margin: 0;
     }
 }
